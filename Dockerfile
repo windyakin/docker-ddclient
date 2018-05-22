@@ -22,9 +22,8 @@ RUN apk add --no-cache --virtual build-dependencies \
   && mkdir /tmp/ddclient \
   && tar xf /tmp/ddclient-${DDCLIENT_VERSION}.tar.bz2 -C /tmp/ddclient --strip-components=1 \
   && install -Dm755 /tmp/ddclient/ddclient /usr/bin/ \
-  && mkdir /var/cache/ddclient /etc/ddclient
-
-RUN apk del --purge build-dependencies \
+  && mkdir /var/cache/ddclient /etc/ddclient \
+  && apk del --purge build-dependencies \
   && rm -rf /config/.cpanm /root/.cpanm /tmp/*
 
 COPY entrypoint.sh .
