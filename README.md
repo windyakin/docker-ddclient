@@ -1,12 +1,18 @@
-# docker-ddclient
+# docker-ddclient (**DEPRECATED**)
 
 [DDclient](https://sourceforge.net/projects/ddclient/) run on Docker container.
 
-Main usage is CloudFlare. But maybe can use other service too.
+~~Main usage is CloudFlare. But maybe can use other service too.~~
+
+**DDClient ver.3.8.3 is not support Cloudflare ver.4 API. Cannot updating Cloudflare setting. But, if you use another DDNS Client (for Cloudflare) you can update it.**
+
+* [joshuaavalon/cloudflare-ddns](https://github.com/joshuaavalon/docker-cloudflare)
+* [oznu/docker-cloudflare-ddns](https://github.com/oznu/docker-cloudflare-ddns)
+* etc...
 
 ## Available on Docker Hub 🐳
 
-* [windyakin/docker-ddclient](https://hub.docker.com/r/windyakin/docker-ddclient/) [![](https://images.microbadger.com/badges/image/windyakin/docker-ddclient.svg)](https://microbadger.com/images/windyakin/docker-ddclient)
+* ~~[windyakin/docker-ddclient](https://hub.docker.com/r/windyakin/docker-ddclient/)~~ [![](https://images.microbadger.com/badges/image/windyakin/docker-ddclient.svg)](https://microbadger.com/images/windyakin/docker-ddclient)
 
 ## Getting started
 
